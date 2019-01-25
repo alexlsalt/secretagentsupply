@@ -1,0 +1,235 @@
+/* Universal styles */
+
+html,
+body {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header section */
+
+.company {
+  background-color: black;
+  color: white;
+}
+
+.company .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.66rem 0 0.66rem 0.5rem;
+}
+
+.company img {
+  padding-right: 0.5rem;
+  height: 1.5rem;
+}
+
+/* Main banner section */
+
+.main-banner {
+  height: 25rem;
+  background-image: url(///Users/alexmorton/Documents/projects/SecretAgent/resources/images/moto.jpeg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.headline {
+  position: relative;
+  top: 9rem;
+  background-color: black;
+  color: white;
+  width: 20rem;
+  padding: 2rem 3rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .headline h3 {
+    font-size: 1.2rem;
+  }
+
+  .headline h1 {
+    font-size: 1.5rem;
+  }
+
+  .headline {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .headline {
+    top: 7.5rem;
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 0 1rem 2rem;
+  }
+
+  .headline h3 {
+    font-size: 0.77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+  }
+
+  .main-banner {
+    height: 15rem;
+  }
+}
+
+/* Navigation section */
+
+nav {
+  background-color: firebrick;
+  font-weight: bold;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: normal;
+}
+
+nav .mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav .container {
+    display: none;
+  }
+
+  nav .mobile-nav {
+    display: block;
+    text-align: center;
+    list-style: none;
+  }
+
+}
+
+/* Products and business section */
+
+.products,
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  border: 4px solid black;
+  padding: 2rem 0;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 8rem;
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.business-info {
+  margin: 3rem 0 4rem 0;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+  .info {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .business-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+
+}
+
+/* Footer section */
+
+footer {
+  height: 5rem;
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 3rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
+}
